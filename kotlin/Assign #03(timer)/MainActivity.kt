@@ -52,3 +52,20 @@ btnReset.isEnabled = true
 editTime.isEnabled = false
 }
 }
+btnPause.setOnClickListener {
+timer?.cancel()
+btnPause.isEnabled = false
+btnReset.isEnabled = true
+btnStart.isEnabled = false
+}
+btnReset.setOnClickListener {
+timer?.cancel()
+textTimer.text = "00:00"
+editTime.setText("")
+editTime.isEnabled = true
+btnStart.isEnabled = true
+btnPause.isEnabled = false
+btnReset.isEnabled = false
+}
+}
+}
