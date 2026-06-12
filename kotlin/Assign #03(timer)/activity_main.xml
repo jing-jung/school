@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center"
+android:orientation="vertical"
+>
+<EditText
+android:id="@+id/editTime"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:hint="초 단위 시간 입력"
+android:inputType="number"
+android:gravity="center"
+android:textSize="30sp"/>
+<TextView
+android:id="@+id/textTimer"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="00:00"
+android:textSize="32sp"
+android:textColor="#FF0000"
+/>
+<LinearLayout
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_marginTop="30dp">
+<Button
+android:id="@+id/buttonStart"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="시작"/>
+<Button
+android:id="@+id/buttonPause"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="일시 정지"/>
+<Button
+android:id="@+id/buttonReset"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="초기화"/>
+</LinearLayout>
+</LinearLayout>
